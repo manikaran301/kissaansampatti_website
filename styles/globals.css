@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #008A70;
+  --brand-light: #E6F5F2;
+  --brand-dark: #006B57;
+  --text-primary: #1F1F1F;
+  --text-secondary: #5F6368;
+  --border: #E0E0E0;
+  --bg-surface: #FAFAFA;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-white antialiased;
+  font-family: 'Roboto', 'Google Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+/* Simple container */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+/* Hero background - gradient from white (left) to brand color (right) */
+.hero-gradient {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(0, 138, 112, 0.1) 50%, rgba(0, 138, 112, 0.2) 100%);
+}
+
+/* Alternative stronger gradient */
+.hero-gradient-strong {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(0, 138, 112, 0.3) 70%, #008A70 100%);
+}
+
+/* Material UI style - no shadows, clean borders */
+.card {
+  @apply bg-white border border-[var(--border)] rounded-lg;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--brand);
+}
+
+/* Google Translate Widget Styling */
+#google_translate_element {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Hide Google Translate banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Style the translate dropdown */
+.goog-te-gadget {
+  font-family: inherit !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  display: inline-block !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: var(--brand) !important;
+  border: 2px solid var(--brand) !important;
+  border-radius: 9999px !important;
+  padding: 10px 20px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-width: 140px !important;
+  justify-content: center !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: var(--brand-dark) !important;
+  border-color: var(--brand-dark) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 138, 112, 0.2) !important;
+}
+
+/* Hide the default icon */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Style the language text */
+.goog-te-menu-value {
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.goog-te-menu-value span {
+  color: white !important;
+  font-weight: 600 !important;
+  vertical-align: middle !important;
+  font-size: 15px !important;
+}
+
+.goog-te-menu-value span:first-child {
+  color: white !important;
+}
+
+/* Add custom language icon before text */
+.goog-te-gadget-simple::before {
+  content: "🌐";
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Keep the combo visible but style it properly */
+.goog-te-gadget .goog-te-combo {
+  display: inline-block !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: white !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+}
+
+/* Remove "Powered by" text */
+.goog-te-gadget-simple .goog-te-menu-value span:last-child {
+  display: none !important;
+}
+
+/* Style the dropdown arrow */
+.goog-te-menu-value > span:last-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+  padding-left: 12px !important;
+  margin-left: 8px !important;
+}
+
+/* Make the arrow white */
+.goog-te-menu-value > span > img {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Style the language dropdown menu */
+.goog-te-menu-frame {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.goog-te-menu2 {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  max-width: 100% !important;
+}
+
+.goog-te-menu2-item div,
+.goog-te-menu2-item:link div,
+.goog-te-menu2-item:visited div,
+.goog-te-menu2-item:active div {
+  color: var(--text-primary) !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  padding: 10px 16px !important;
+  font-weight: 500 !important;
+}
+
+.goog-te-menu2-item:hover div {
+  background-color: var(--brand-light) !important;
+  color: var(--brand) !important;
+}
+
+.goog-te-menu2-item-selected div {
+  background-color: var(--brand-light) !important;
+  color: var(--brand) !important;
+  font-weight: 600 !important;
+}
+
+/* Improve dropdown positioning */
+.goog-te-menu-frame.skiptranslate {
+  margin-top: 8px !important;
+}
+
+/* Additional fixes for text display */
+.goog-te-gadget-simple .goog-te-menu-value span:first-child::before {
+  content: "" !important;
+}
+
+/* Ensure proper text alignment */
+.goog-te-gadget-simple .goog-te-menu-value {
+  line-height: 1 !important;
+}
+
+/* Fix for language name display */
+.goog-te-menu-value > span:first-child {
+  display: inline-block !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+}
+
+/* Remove any extra spacing */
+.goog-te-gadget-simple * {
+  vertical-align: middle !important;
+}
+
