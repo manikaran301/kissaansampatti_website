@@ -7,17 +7,17 @@ export default function HowItWorks() {
     },
     {
       title: 'Submit Crop Residue Details',
-      text: 'Upload via simple form or audio recording in your local language.',
+      text: 'Upload via simple form or audio recording in your local language (Hindi/Punjabi).',
       iconPath: 'M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z'
     },
     {
       title: 'Get Best Price Offers',
-      text: 'Buyers directly offer for your paddy straw, wheat straw, or other residues.',
+      text: 'Buyers will directly offer for your paddy straw, wheat straw, or other residues.',
       iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
     },
     {
       title: 'Pickup & Payment',
-      text: 'Your material is collected from your farm location, and payment is released quickly.',
+      text: 'Your material will be collected from your farm location, and payment will be released quickly.',
       iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
     }
   ]
