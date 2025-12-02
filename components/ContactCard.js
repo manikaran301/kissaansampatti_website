@@ -24,7 +24,7 @@ export default function ContactCard() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-xs sm:text-sm font-semibold text-[var(--text-primary)] mb-0.5 sm:mb-1">Phone</h3>
-                  <p className="text-sm sm:text-base text-[var(--text-secondary)]">+91-XXXXXXXXXX</p>
+                  <p className="text-sm sm:text-base text-[var(--text-secondary)]">+91-73039 85353</p>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function ContactCard() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-xs sm:text-sm font-semibold text-[var(--text-primary)] mb-0.5 sm:mb-1">Email</h3>
-                  <p className="text-sm sm:text-base text-[var(--text-secondary)] break-words">support@kissaansampatti.in</p>
+                  <p className="text-sm sm:text-base text-[var(--text-secondary)] break-words">support@kissaansampatti.com</p>
                 </div>
               </div>
             </div>
