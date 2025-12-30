@@ -1,0 +1,16 @@
+# Robots.txt for Kissaan Sampatti
+# https://kissaansampatti.in
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kissaansampatti.in/sitemap.xml
+
+# Crawl-delay (optional - be polite to search engines)
+Crawl-delay: 1
+
+# Disallow admin or private paths (add if needed)
+# Disallow: /admin/
+# Disallow: /api/
+

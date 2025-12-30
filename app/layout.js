@@ -1,6 +1,6 @@
 import '../styles/globals.css'
-import Image from 'next/image'
-import LanguageSwitcher from '../components/LanguageSwitcher'
+import Header from '../components/Header'
+import WhatsAppButton from '../components/WhatsAppButton'
 
 export const metadata = {
   title: 'Kissaan Sampatti - Sell Crop Residue & Earn | Farmers & Traders',
@@ -45,7 +45,7 @@ export const metadata = {
     description: 'A smarter way for farmers and traders to sell crop residues. Real-time prices, verified buyers, village pickup and fast payments.',
     images: [
       {
-        url: 'https://kissaansampatti.in/og-image.jpg',
+        url: 'https://kissaansampatti.in/heroImage.png',
         width: 1200,
         height: 630,
         alt: 'Kissaan Sampatti - Crop Residue Marketplace',
@@ -56,7 +56,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Kissaan Sampatti - Sell Crop Residue & Earn',
     description: 'Farmers and traders can sell crop residues easily. Audio forms, transparent pricing, bulk selling and quick payments.',
-    images: ['https://kissaansampatti.in/twitter-image.jpg'],
+    images: ['https://kissaansampatti.in/heroImage.png'],
     creator: '@kissaansampatti',
   },
   robots: {
@@ -71,7 +71,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'gbC1rvoSH6UhrU9GxDzvhSUKSWhjfQfGj5gDNpG_X4g',
   },
 }
 
@@ -83,13 +83,13 @@ const schemaOrgJSONLD = {
   logo: 'https://kissaansampatti.in/kisanshaktilogo.png',
   description: 'Kissaan Sampatti is a digital marketplace where farmers and traders sell crop residues like paddy straw, wheat straw, and husk to verified biomass buyers.',
   sameAs: [
-    'https://facebook.com/kissaansampatti',
-    'https://instagram.com/kissaansampatti',
-    'https://youtube.com/@kissaansampatti',
+    'https://www.facebook.com/profile.php?id=61584668245437',
+    'https://www.instagram.com/kissaan.sampatti/',
+    'https://www.youtube.com/@kissaansampattiapp',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+91-XXXXXXXXXX',
+    telephone: '+91-9289411077',
     contactType: 'Customer Service',
     areaServed: 'IN',
     availableLanguage: ['English', 'Hindi', 'Punjabi'],
@@ -100,6 +100,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB0JWDJGK9" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FB0JWDJGK9');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgJSONLD) }}
@@ -163,86 +175,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main>
-          {/* Modern Clean Header with increased logo size */}
-          <header className="bg-white/95 backdrop-blur-sm border-b border-[var(--border)] sticky top-0 z-50 shadow-sm">
-            <div className="container">
-              <div className="flex items-center justify-between py-4">
-                {/* Logo Section - Increased Size */}
-                <a href="/" className="flex items-center gap-3 hover:opacity-90 transition-all duration-200">
-                  <Image
-                    src="/kisanshaktilogo.png"
-                    alt="Kissaan Sampatti Logo"
-                    width={56}
-                    height={56}
-                    className="object-contain"
-                  />
-                  <Image
-                    src="/Kisan-Sampati-text.png"
-                    alt="Kissaan Sampatti"
-                    width={160}
-                    height={40}
-                    className="object-contain hidden sm:block"
-                  />
-                </a>
-
-                {/* Navigation - Desktop */}
-                <nav className="hidden md:flex items-center gap-8">
-                  <a
-                    href="/#about"
-                    className="text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors duration-200 font-medium relative group"
-                  >
-                    About
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
-                  </a>
-                  <a
-                    href="/#how"
-                    className="text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors duration-200 font-medium relative group"
-                  >
-                    How It Works
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
-                  </a>
-                  <a
-                    href="/#tutorials"
-                    className="text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors duration-200 font-medium relative group"
-                  >
-                    Tutorials
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
-                  </a>
-                  <a
-                    href="/#features"
-                    className="text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors duration-200 font-medium relative group"
-                  >
-                    Features
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
-                  </a>
-                  <a
-                    href="/#contact"
-                    className="text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors duration-200 font-medium relative group"
-                  >
-                    Contact
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
-                  </a>
-
-                  {/* Language Switcher */}
-                  <LanguageSwitcher />
-
-                  {/* Hidden Google Translate Widget (for functionality) */}
-                  <div id="google_translate_element" className="hidden"></div>
-                </nav>
-
-                {/* Mobile Menu Button */}
-                <button
-                  className="md:hidden p-2 text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors"
-                  aria-label="Menu"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </header>
+          <Header />
           {children}
+          <WhatsAppButton />
         </main>
       </body>
     </html>
