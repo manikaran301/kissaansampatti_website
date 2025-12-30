@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
                 Privacy Policy – Kissaan Sampatti App
               </h1>
               <p className="text-[var(--text-secondary)]">
-                <strong>Last Updated:</strong> 11 August 2025
+                <strong>Last Updated:</strong> 30 December 2025
               </p>
             </div>
 
@@ -90,52 +90,120 @@ export default function PrivacyPolicy() {
               </ul>
             </div>
 
-            {/* Section 6 */}
-            <div className="card p-6 sm:p-8 bg-white mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">6. Your Rights</h2>
-              <p className="text-[var(--text-secondary)] mb-3">You can:</p>
+            {/* Section 6 - Account & Data Deletion */}
+            <div className="card p-6 sm:p-8 bg-white mb-6 border-l-4 border-[var(--brand)]">
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">6. Account & Data Deletion</h2>
+              <p className="text-[var(--text-secondary)] mb-4">
+                In compliance with Google Play Store and Apple App Store requirements, you have the right to request deletion of your account and all associated personal data.
+              </p>
+
+              <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-3">How to Request Account Deletion:</h3>
+              <p className="text-[var(--text-secondary)] mb-4">
+                To request deletion of your account and personal data, please send an email to:
+              </p>
+              <div className="bg-[var(--bg-surface)] p-4 rounded-lg mb-4">
+                <p className="text-[var(--text-primary)] font-semibold">
+                  📧 Email:{' '}
+                  <a href="mailto:support@kissaansampatti.com?subject=Account%20Deletion%20Request" className="text-[var(--brand)] hover:underline">
+                    support@kissaansampatti.com
+                  </a>
+                </p>
+                <p className="text-[var(--text-secondary)] text-sm mt-2">
+                  Subject: Account Deletion Request
+                </p>
+              </div>
+
+              <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-3">What Happens After Your Request:</h3>
+              <ul className="list-disc list-inside text-[var(--text-secondary)] space-y-2 ml-4 mb-4">
+                <li>We will verify your identity to ensure the request is legitimate.</li>
+                <li>Your account and all associated personal data will be permanently deleted within <strong>30 days</strong> of verification.</li>
+                <li>You will receive a confirmation email once the deletion is complete.</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Data That Will Be Deleted:</h3>
+              <ul className="list-disc list-inside text-[var(--text-secondary)] space-y-2 ml-4 mb-4">
+                <li>Your profile information (name, phone number, email, address)</li>
+                <li>Farming and crop residue listing data</li>
+                <li>Uploaded images and photos</li>
+                <li>Transaction history and communication records</li>
+                <li>Location data and preferences</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Data That May Be Retained:</h3>
+              <p className="text-[var(--text-secondary)] mb-2">
+                Certain data may be retained for legal, regulatory, or legitimate business purposes:
+              </p>
               <ul className="list-disc list-inside text-[var(--text-secondary)] space-y-2 ml-4">
-                <li>Access and review the information we hold about you.</li>
-                <li>Update or correct your details.</li>
-                <li>Withdraw consent for processing certain data.</li>
-                <li>Request deletion of your personal information.</li>
+                <li>Transaction records required for tax/accounting purposes (anonymized)</li>
+                <li>Data necessary to comply with legal obligations</li>
+                <li>Information needed to resolve disputes or enforce agreements</li>
               </ul>
             </div>
 
             {/* Section 7 */}
             <div className="card p-6 sm:p-8 bg-white mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">7. Location & Tracking</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">7. Your Rights</h2>
+              <p className="text-[var(--text-secondary)] mb-3">You can:</p>
+              <ul className="list-disc list-inside text-[var(--text-secondary)] space-y-2 ml-4">
+                <li>Access and review the information we hold about you.</li>
+                <li>Update or correct your details.</li>
+                <li>Withdraw consent for processing certain data.</li>
+                <li>Request deletion of your personal information (see Section 6 above).</li>
+                <li>Export your data in a portable format upon request.</li>
+              </ul>
+            </div>
+
+            {/* Section 8 */}
+            <div className="card p-6 sm:p-8 bg-white mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">8. Location & Tracking</h2>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 Location services are used only to calculate the distance between your location and plant locations for transportation purposes. You can disable location permissions at any time in your device settings, but some features may not function properly.
               </p>
             </div>
 
-            {/* Section 8 */}
+            {/* Section 9 */}
             <div className="card p-6 sm:p-8 bg-white mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">8. Cookies & Tracking Technologies</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">9. Cookies & Tracking Technologies</h2>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 We do not use cookies in this app. However, the app may use analytics tools or SDKs to understand usage and improve performance.
               </p>
             </div>
 
-            {/* Section 9 */}
+            {/* Section 10 */}
             <div className="card p-6 sm:p-8 bg-white mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">9. Policy Updates</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">10. Policy Updates</h2>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 We may update this Privacy Policy from time to time. Changes will be posted within the app with an updated "Last Updated" date.
               </p>
             </div>
 
-            {/* Section 10 */}
+            {/* Section 11 */}
             <div className="card p-6 sm:p-8 bg-white">
-              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">10. Contact Information</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-4">11. Contact Information</h2>
               <p className="text-[var(--text-secondary)] mb-2"><strong>Kissaan Sampatti App</strong></p>
-              <p className="text-[var(--text-secondary)]">
-                <strong>Email:</strong>{' '}
-                <a href="mailto:support@kissaansampatti.com" className="text-[var(--brand)] hover:underline">
-                  support@kissaansampatti.com
-                </a>
+              <p className="text-[var(--text-secondary)] mb-4">
+                For any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:
               </p>
+              <div className="bg-[var(--bg-surface)] p-4 rounded-lg">
+                <p className="text-[var(--text-secondary)] mb-2">
+                  <strong>📧 Email:</strong>{' '}
+                  <a href="mailto:support@kissaansampatti.com" className="text-[var(--brand)] hover:underline">
+                    support@kissaansampatti.com
+                  </a>
+                </p>
+                <p className="text-[var(--text-secondary)] mb-2">
+                  <strong>📱 Phone:</strong>{' '}
+                  <a href="tel:+919289411077" className="text-[var(--brand)] hover:underline">
+                    +91-9289411077
+                  </a>
+                </p>
+                <p className="text-[var(--text-secondary)]">
+                  <strong>🌐 Website:</strong>{' '}
+                  <a href="https://kissaansampatti.in" className="text-[var(--brand)] hover:underline">
+                    kissaansampatti.in
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
