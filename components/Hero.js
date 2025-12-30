@@ -48,7 +48,7 @@ export default function Hero() {
 
               {/* Apple App Store Button */}
               <a
-                href="https://www.apple.com/app-store/"
+                href="https://apps.apple.com/in/app/kissaan-sampatti/id6751637103"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-all w-full sm:w-auto justify-center sm:justify-start"
