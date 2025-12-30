@@ -132,8 +132,8 @@ export default function PrivacyPolicy() {
               <p className="text-[var(--text-secondary)] mb-2"><strong>Kissaan Sampatti App</strong></p>
               <p className="text-[var(--text-secondary)]">
                 <strong>Email:</strong>{' '}
-                <a href="mailto:kisan.sampati@manikaranpowerltd.in" className="text-[var(--brand)] hover:underline">
-                  kisan.sampati@manikaranpowerltd.in
+                <a href="mailto:support@kissaansampatti.com" className="text-[var(--brand)] hover:underline">
+                  support@kissaansampatti.com
                 </a>
               </p>
             </div>

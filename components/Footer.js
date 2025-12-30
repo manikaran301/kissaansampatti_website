@@ -121,8 +121,6 @@ export default function Footer() {
           <div className="pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--text-secondary)]">
             <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
               <span>© 2025 Kissaan Sampatti. All rights reserved.</span>
-              <span className="hidden sm:inline">|</span>
-              <span>Powered by <a href="https://www.manikaranpowerltd.in" target="_blank" rel="noopener noreferrer" className="text-[var(--brand)] hover:underline">Manikaran Power Ltd</a></span>
             </div>
             <div className="flex gap-6">
               <a href="/privacy-policy" className="hover:text-[var(--brand)] transition-colors">Privacy Policy</a>
