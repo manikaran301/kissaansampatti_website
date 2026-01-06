@@ -122,9 +122,8 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
               <span>© 2025 Kissaan Sampatti. All rights reserved.</span>
             </div>
-            <div className="flex gap-6">
+            <div>
               <a href="/privacy-policy" className="hover:text-[var(--brand)] transition-colors">Privacy Policy</a>
-              <a href="#terms" className="hover:text-[var(--brand)] transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

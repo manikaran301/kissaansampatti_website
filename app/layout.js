@@ -116,62 +116,6 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgJSONLD) }}
         />
-        {/* Google Translate Script */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                  {
-                    pageLanguage: 'en',
-                    includedLanguages: 'en,hi,pa',
-                    layout: google.translate.TranslateElement.InlineLayout.DROPDOWN,
-                    autoDisplay: false,
-                    multilanguagePage: true
-                  },
-                  'google_translate_element'
-                );
-
-                // Auto-detect browser language and translate
-                setTimeout(function() {
-                  var userLang = navigator.language || navigator.userLanguage;
-                  console.log('Browser language detected:', userLang);
-
-                  // Check if user has already selected a language
-                  var hasSelectedLanguage = document.cookie.indexOf('googtrans') !== -1;
-
-                  if (!hasSelectedLanguage) {
-                    var targetLang = 'en'; // default
-
-                    // Map browser language codes to our supported languages
-                    if (userLang.startsWith('hi')) {
-                      targetLang = 'hi'; // Hindi
-                      console.log('Auto-translating to Hindi');
-                    } else if (userLang.startsWith('pa')) {
-                      targetLang = 'pa'; // Punjabi
-                      console.log('Auto-translating to Punjabi');
-                    }
-
-                    // Auto-translate if not English
-                    if (targetLang !== 'en') {
-                      var selectElement = document.querySelector('.goog-te-combo');
-                      if (selectElement) {
-                        selectElement.value = targetLang;
-                        selectElement.dispatchEvent(new Event('change'));
-                        console.log('Language changed to:', targetLang);
-                      }
-                    }
-                  }
-                }, 1000);
-              }
-            `,
-          }}
-        />
-        <script
-          type="text/javascript"
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        />
       </head>
       <body>
         <main>

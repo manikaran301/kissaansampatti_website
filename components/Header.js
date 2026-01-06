@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,8 +52,6 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--brand)] transition-all duration-200 group-hover:w-full"></span>
               </a>
             ))}
-            <LanguageSwitcher />
-            <div id="google_translate_element" className="hidden"></div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -78,9 +75,8 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <nav className="py-4 border-t border-[var(--border)]">
             <div className="flex flex-col gap-2">
@@ -94,9 +90,6 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <div className="px-4 py-3">
-                <LanguageSwitcher />
-              </div>
             </div>
           </nav>
         </div>
